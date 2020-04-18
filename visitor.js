@@ -19,13 +19,13 @@ carros.prototype = {
 }
 
 const bmw = new carros("bmw", 140000)
-console.log(bmw.getPreco())
+console.log("O preco do carro é: ", bmw.getPreco())
 
-function precoAumentou(pre) {
+function novoPreco(pre) {
     pre.setPreco(pre.getPreco() * 2)
 }
 
-bmw.accept(precoAumentou)
-console.log(bmw.getPreco())
+bmw.accept(novoPreco)
+console.log("O preco novo do carro é: ", bmw.getPreco())
 
 
